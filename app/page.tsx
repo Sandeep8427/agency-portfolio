@@ -3,13 +3,16 @@ import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
 import Image from "next/image";
 import Link from "next/link";
-import GraphicDesign from "./GraphicDesign";
+import WebsiteDesign from "./websiteDeisgn";
+import GraphicDesign from "./graphicDesign";
+import ShopifyStores from "./ShopifyStores";
+import Brands from "./Brands";
 
 export default function Home() {
   return (
     <div className="w-full md:justify-center md:items-center bg-black/[0.96] antialiased bg-grid-white/[0.02] overflow-hidden relative">
       <Navbar />
-      <Spotlight className="hidden md:flex md:-top-80 left-20" fill="white" />
+      <Spotlight className="hidden md:flex md:-top-80 left-40" fill="white" />
 
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div
@@ -31,10 +34,12 @@ export default function Home() {
         </Link>
 
         <div className="w-full pt-20">
-          <SliderOne/>
+          <SliderOne />
+          <WebsiteDesign />
+          <GraphicDesign /> 
+          <ShopifyStores/> 
+          <Brands/>
         </div>
-
-        <GraphicDesign />
       </div>
     </div>
   );
