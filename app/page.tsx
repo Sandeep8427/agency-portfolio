@@ -1,10 +1,9 @@
 'use client'
 
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
-import Image from "next/image";
 import Link from "next/link";
 
 import WebsiteDesign from "./websiteDeisgn";
@@ -16,13 +15,13 @@ import FAQS from "./FAQ";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
 
 export default function Home() {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-  const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible);
-  };
-  const closeDropdown = () => {
-    setDropdownVisible(false);
-  };
+  // const [isDropdownVisible, setDropdownVisible] = useState(false);
+  // const toggleDropdown = () => {
+  //   setDropdownVisible(!isDropdownVisible);
+  // };
+  // const closeDropdown = () => {
+  //   setDropdownVisible(false);
+  // };
 
   const websiteDesignRef = useRef<HTMLDivElement>(null);
   const graphicDesignRef = useRef<HTMLDivElement>(null);

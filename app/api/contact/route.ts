@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
@@ -52,8 +51,16 @@ export async function POST(req: Request) {
 
       return NextResponse.json("email has been sent");
     } catch (error) {
-      return NextResponse.json("email has not been sent");
-    }
+        console.error("Error sending email:", error); 
+      
+        return NextResponse.json(
+          {
+            success: false,
+            message: "Failed to send email. Please try again later.",
+          },
+          { status: 500 } 
+        );
+      }
   } else {
     return NextResponse.json('method not allowed');
   }

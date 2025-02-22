@@ -23,11 +23,9 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 
 import { Input } from "@/components/ui/input";
@@ -35,7 +33,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 
 import { Textarea } from "@/components/ui/textarea";
-import { PiCheckLight, PiSmiley } from "react-icons/pi";
+import { PiSmiley } from "react-icons/pi";
 import Navbar from "@/components/Navbar";
 
 const FormSchema = z.object({
@@ -58,6 +56,7 @@ const FormSchema = z.object({
     "Website Development",
   ]),
   info: z.string(),
+  terms: z.boolean().default(false),
 });
 
 type FormValues = {
@@ -76,6 +75,7 @@ type FormValues = {
   info: string;
   terms: boolean;
 };
+
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -111,6 +111,7 @@ export default function ContactForm() {
 
       setSubmitted(true);
     } catch (error) {
+      console.error("Error sending email:", error);
       toast({
         title: "Error",
         description: "Something went wrong",
