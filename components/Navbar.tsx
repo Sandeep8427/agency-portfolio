@@ -10,7 +10,7 @@ interface NavbarProps {
   scrollToGraphicDesign: () => void;
   scrollToShopifyStores: () => void;
   scrollToBrands: () => void;
-  scrollToServices: () => void; // Define scrollToServices function
+  scrollToServices: () => void; 
 }
 
 const Navbar = ({
@@ -18,7 +18,7 @@ const Navbar = ({
   scrollToGraphicDesign,
   scrollToShopifyStores,
   scrollToBrands,
-  scrollToServices, // Add scrollToServices to props
+  scrollToServices, 
 }: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
