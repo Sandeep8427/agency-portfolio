@@ -43,7 +43,7 @@ const FormSchema = z.object({
   job_title: z.string(),
   company_name: z.string(),
   help: z.enum([
-    "Evaluate Bird for my company",
+    "Evaluate White Owl for my company",
     "Learn More",
     "Get a Quote",
     "Other",
@@ -65,7 +65,7 @@ type FormValues = {
   email: string;
   job_title: string;
   company_name: string;
-  help: "Evaluate Bird for my company" | "Learn More" | "Get a Quote" | "Other";
+  help: "Evaluate White Owl for my company" | "Learn More" | "Get a Quote" | "Other";
   services:
     | "Mobile App Develoment"
     | "Social Media Marketing"
@@ -142,7 +142,7 @@ export default function ContactForm() {
               text-gray-300
                     "
           >
-            Let&apos;s talk about how Bird can help your team work better.
+            Let&apos;s talk about how White Owl can help your team work better.
           </div>
 
           <div className="bg-[#f6f5f4] md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
@@ -295,8 +295,8 @@ export default function ContactForm() {
                       </FormControl>
                       <SelectContent>
                         <div className="flex gap-4">
-                          <SelectItem value="Evaluate Bird for my company">
-                            Evaluate Bird for my company
+                          <SelectItem value="Evaluate White Owl for my company">
+                            Evaluate White Owl for my company
                           </SelectItem>
                         </div>
                         <SelectItem value="Learn More">Learn More</SelectItem>
@@ -337,8 +337,8 @@ export default function ContactForm() {
                   />
                 </div>
                 <div className="text-xs font-light  md:w-3/4 mb-1 bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                  I agree to Bird&apos; sending marketing communications related
-                  to bird
+                  I agree to White Owl&apos; sending marketing communications related
+                  to White Owl
                 </div>
               </div>
 

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { useRef } from "react";
 import Navbar from "@/components/Navbar";
@@ -6,10 +6,10 @@ import SliderOne from "@/components/ui/slider";
 import { Spotlight } from "@/components/ui/spotlight";
 import Link from "next/link";
 
-import WebsiteDesign from "./websiteDeisgn";
-import GraphicDesign from "./GraphicDesign";
+import WebsiteDesign from "./websiteDevelopment";
+import GraphicDesign from "./WebsiteDesign";
 import ShopifyStores from "./ShopifyStores";
-import Brands from "./Brands";
+import Brands from "./Tech";
 import Services from "./Services";
 import FAQS from "./FAQ";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
@@ -67,14 +67,15 @@ export default function Home() {
       <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
-          Create, grow, and <br /> scale your business
+          Custom solutions designed <br /> for your business success
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business. We are a team of creatives who are excited to help you grow your business.
+          Our passionate team is here to help you grow, innovate, and scale with
+          confidence.
         </p>
 
         <Link
-          href='/book'
+          href="/book"
           className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2  mx-auto my-6 text-white "
         >
           Book a call
@@ -95,8 +96,8 @@ export default function Home() {
         <div ref={brandsRef}>
           <Brands />
         </div>
-        <div id ='services'>
-        <Services />
+        <div id="services">
+          <Services />
         </div>
         <InfiniteMovingCardsDemo />
         <FAQS />

@@ -1,4 +1,7 @@
 "use client";
+
+/* eslint-disable */
+
 import { useState } from "react";
 import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
@@ -10,7 +13,7 @@ interface NavbarProps {
   scrollToGraphicDesign: () => void;
   scrollToShopifyStores: () => void;
   scrollToBrands: () => void;
-  scrollToServices: () => void; 
+  scrollToServices: () => void;
 }
 
 const Navbar = ({
@@ -18,7 +21,7 @@ const Navbar = ({
   scrollToGraphicDesign,
   scrollToShopifyStores,
   scrollToBrands,
-  scrollToServices, 
+  scrollToServices,
 }: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
@@ -54,17 +57,17 @@ const Navbar = ({
               to bg-neutral-400 bg-opacity-50"
         >
           <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
-            Website Design
+            Website Development
           </div>
           <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
-            Graphic Design
+            Website Design
           </div>
 
           <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
             Shopify Stores
           </div>
           <div onClick={scrollToBrands} className="hover:text-gray-50">
-            Brands
+            Teck stack
           </div>
 
           <Link href="/pricing" className="hover:text-gray-50">
@@ -82,7 +85,7 @@ const Navbar = ({
               <X />
               <DropDownMenu
                 onClose={closeDropDown}
-                scrollToServices={scrollToServices} // Pass scrollToServices
+                scrollToServices={scrollToServices}
               />
             </div>
           ) : (

@@ -5,20 +5,20 @@ import Image from "next/image";
 const stores = [
   {
     image: "/images/image2.png",
-    quote: "Bird showed us to get started, what to do, and how to do it.",
+    quote: "White Owl showed us to get started, what to do, and how to do it.",
     name: "Jason Scer",
   },
   {
     image: "/images/shop-2.jpeg",
     quote:
-      "We had no idea how to get started, but Bird showed us the way. And we were able to create something amazing.",
+      "We had no idea how to get started, but White Owl showed us the way. And we were able to create something amazing.",
     name: "John Prency",
   },
 
   {
     image: "/images/s-2.webp",
     quote:
-      "The team at Bird is amazing. They helped us create a stunning store that we are proud of.",
+      "The team at White Owl is amazing. They helped us create a stunning store that we are proud of.",
     name: "Miguel Martinez",
   },
 ];
@@ -33,11 +33,12 @@ const ShopifyStores = () => {
     >
       <div className=" p-4   mx-auto relative z-10  w-full ">
         <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-          Shopify Stores <br />
+          Shopify Theme Development <br /> and customization
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We create stunning Shopify stores that are designed to convert.
+          We make a unique client experience with customized Shopify theme which
+          is purely based on your needs and specifications.
         </p>
         <div className="md:flex items-center justify-center  px-10 ">
           {stores.map((store, index) => (
