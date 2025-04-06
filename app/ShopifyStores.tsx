@@ -67,7 +67,7 @@ const ShopifyStores = () => {
                 className="rounded-xl object-cover"
               />
               <p className="text-neutral-700 font-medium text-base mt-4 italic">
-                "{store.quote}"
+              &quot;{store.quote}&quot;
               </p>
               <p className="text-neutral-900 font-semibold text-lg mt-2">
                 — {store.name}
