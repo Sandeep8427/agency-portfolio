@@ -5,44 +5,53 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="pb-40 rounded-md flex flex-col antialiased my-4 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+    <>
+      <div className="text-white px-4 pt-20 md:pt-32">
+        <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-yellow-900 to-yellow-300 bg-opacity-50">
+          What our <br /> clients say about us
+        </div>
+      </div>
+
+      <div className="pb-40 rounded-md flex flex-col antialiased my-4 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+    </>
   );
 }
 
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Thewhiteowls is a blend of professionalism and client centric attitude. They are expert in their field and really wish their clients achieve success in their respective businesses.",
+    name: "William Allen",
+    title: "",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "Thewhiteowls has really automated some of our website’s processes. We now spend no time doing manual work. The website has made our work more easy. Thanks to its scheduling feature, we don’t need staff to work outside of business hours.",
+    name: "Liam Wilson",
+    title: "",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "Thewhiteowls is a blend of professionalism and client centric attitude. They are expert in their field and really wish their clients achieve success in their respective businesses.",
+    name: "Sophia Carter",
+    title: "",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "To take my business online Thewhiteowls not only host the website with precise name they also look into the requirements of my online store to make the interface more user friendly. They not only delivered it in the certain time frame but in budget also",
+    name: "Ava Martinez",
+    title: "",
+  },
+  {
+    quote:
+      "After reviewing our requirements Thewhiteowls created numerous modifications at our websites. Most importantly with each modification our websites performance increased. Needless to say we are extremely satisfied with the results.",
+    name: "Lucas Young",
+    title: "",
   },
 ];

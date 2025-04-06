@@ -1,68 +1,78 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const stores = [
   {
-    image: "/images/image2.png",
-    quote: "White Owl showed us to get started, what to do, and how to do it.",
+    image: "/images/shopify/2.jpg",
+    quote: "Noctua Webworks showed us how to get started, what to do, and how to do it.",
     name: "Jason Scer",
   },
   {
-    image: "/images/shop-2.jpeg",
+    image: "/images/shopify/1.jpg",
     quote:
-      "We had no idea how to get started, but White Owl showed us the way. And we were able to create something amazing.",
+      "We had no idea how to get started, but Noctua Webworks showed us the way. We created something amazing.",
     name: "John Prency",
   },
-
   {
-    image: "/images/s-2.webp",
+    image: "/images/shopify/3.jpg",
     quote:
-      "The team at White Owl is amazing. They helped us create a stunning store that we are proud of.",
+      "The team at Noctua Webworks is amazing. They helped us create a stunning store we're proud of.",
     name: "Miguel Martinez",
+  },
+  {
+    image: "/images/shopify/4.jpg",
+    quote:
+      "Starting out was overwhelming, but Noctua Webworks made everything clear and simple. We built something incredible.",
+    name: "Sarah Mitchell",
+  },
+  {
+    image: "/images/shopify/5.jpg",
+    quote:
+      "Noctua Webworks turned our confusion into confidence. Their expertise helped bring our vision to life.",
+    name: "David Carter",
   },
 ];
 
 const ShopifyStores = () => {
   return (
-    <section
-      className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
-    rounded-3xl
-  
-  "
-    >
-      <div className=" p-4   mx-auto relative z-10  w-full ">
-        <div className="text-4xl py-10 md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-500 bg-opacity-50">
-          Shopify Theme Development <br /> and customization
+    <section className="mt-16 md:py-20 bg-gradient-to-br from-[#f6f5f4] to-[#e9e7e6] w-full rounded-3xl">
+      <div className="px-6 py-10 md:px-12 mx-auto max-w-7xl">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-neutral-800 to-neutral-500">
+            Shopify Theme Development <br /> & Customization
+          </h2>
+          <p className="mt-4 text-lg md:text-xl text-neutral-700 max-w-2xl mx-auto">
+            Noctua Webworks crafts bespoke Shopify themes tailored to your brand and built for performance.
+          </p>
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-800 max-w-lg text-center mx-auto">
-          We make a unique client experience with customized Shopify theme which
-          is purely based on your needs and specifications.
-        </p>
-        <div className="md:flex items-center justify-center  px-10 ">
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {stores.map((store, index) => (
-            <div
+            <motion.div
               key={index}
-              className="flex flex-col items-center justify-center mt-10 md:w-2/3 mx-auto"
+              className="bg-white shadow-xl rounded-2xl p-6 flex flex-col items-center text-center transition-all hover:shadow-2xl hover:scale-[1.02]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <div className="flex flex-col items-center justify-center ">
-                <Image
-                  src={store.image}
-                  alt="shopify store"
-                  width={400}
-                  height={400}
-                  className="rounded-lg mx-auto"
-                />
-                <p className="text-neutral-800 font-bold text-lg mt-4 text-center ">
-                  &quot;{store.quote}&quot;
-                </p>
-                <p className="text-neutral-800 font-bold text-lg mt-4">
-                  {" "}
-                  - {store.name}
-                </p>
-              </div>
-            </div>
+              <Image
+                src={store.image}
+                alt={store.name}
+                width={350}
+                height={350}
+                className="rounded-xl object-cover"
+              />
+              <p className="text-neutral-700 font-medium text-base mt-4 italic">
+                "{store.quote}"
+              </p>
+              <p className="text-neutral-900 font-semibold text-lg mt-2">
+                — {store.name}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>

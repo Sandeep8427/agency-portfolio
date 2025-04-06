@@ -1,11 +1,10 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
-  PiAppStoreLogo,
-  PiHeadsetFill,
-  PiLock,
-  PiMegaphone,
   PiMonitor,
+  PiHeadsetFill,
   PiStorefront,
+  PiAppStoreLogo,
+  PiArrowRight,
 } from "react-icons/pi";
 
 export function CardHoverEffectDemo() {
@@ -22,49 +21,9 @@ export const projects = [
         <PiMonitor className="w-8 h-8 text-blue-600" />
       </div>
     ),
-    title: "Website development",
+    title: "Website Development",
     description:
-      "Our extremely knowledgeable website developers create and maintain dynamic websites. We take also full responsibility for site's technical nitty grittys from performance to capacity. We create content for the site but also measures speed of website and how to handle the traffic.",
-  },
-  {
-    icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
-        <PiStorefront className="w-8 h-8 text-blue-600" />
-      </div>
-    ),
-    title: "Website Designing",
-    description:
-      "At the white owls we are bound to reflect your vision, values and offerings to the target clients at the same time ensures with our visuals elements to achieve your brand consistency. Our aim to create user friendly website to build an online presence with a positive impression. ",
-  },
-  {
-    icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
-        <PiLock className="w-8 h-8 text-blue-600" />
-      </div>
-    ),
-    title: "Shopify Theme Development",
-    description:
-      "We make a unique client experience with customized Shopify theme which is purely based on your needs and specifications. Moreover with our knowledge and skills we can add enhanced and customized featuers to your Shopify theme to make your store more user friendly. ",
-  },
-  {
-    icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
-        <PiMegaphone className="w-8 h-8 text-blue-600" />
-      </div>
-    ),
-    title: "Shopify App development",
-    description:
-      "With the knowledge of our dedicated team and with their expertise on Shopify, we can add some advanced features to your Shopify store which not only creates an online store but captivates target audiences. At the same time provides lot of customized solutions to improve the overall functionality of the Shopify store to provide better user experience.",
-  },
-  {
-    icon: (
-      <div className="bg-blue-100 p-4 rounded-full">
-        <PiAppStoreLogo className="w-8 h-8 text-blue-600" />
-      </div>
-    ),
-    title: "Shopify backend API integration using Node JS and PHP:",
-    description:
-      "To measure up with the customer's needs we provide in time setup 24/7 customer support and secure integration. Along with the mobile responsive themes for your Shopify store. With the help of node js and PHP our experts adds more flexibility and scalability to your business needs. ",
+      "We build modern, scalable websites with clean code, fast performance, and great user experience — tailored to your brand and goals.",
   },
   {
     icon: (
@@ -72,8 +31,108 @@ export const projects = [
         <PiHeadsetFill className="w-8 h-8 text-blue-600" />
       </div>
     ),
-    title: "App development",
+    title: "App Development",
     description:
-      "With the huge skill set and knowledge of our technically sound tram, we can create solutions which enable digital transformation and boost up your business efficiency while maintaining enhancing user experience. ",
+      "From web apps to mobile solutions, we develop feature-rich, secure, and responsive apps that scale with your business.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiStorefront className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Shopify Theme Development",
+    description:
+      "We create custom Shopify themes optimized for performance, branding, and conversions — fully aligned with your store’s needs.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiStorefront className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Shopify Theme Customization",
+    description:
+      "Enhance and personalize your existing Shopify theme with tailored features, styles, and UX improvements.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiAppStoreLogo className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Shopify App Development",
+    description:
+      "We build powerful, custom Shopify apps to extend your store’s functionality and create unique shopping experiences.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiMonitor className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "WordPress Website Development",
+    description:
+      "We develop robust WordPress websites that are secure, SEO-friendly, and easy to manage — tailored for your business.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiMonitor className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "WordPress Website with Elementor",
+    description:
+      "We craft visually stunning, responsive websites using Elementor — giving you full design flexibility with zero code.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiMonitor className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "WordPress E-commerce Website",
+    description:
+      "Launch powerful e-commerce stores using WooCommerce — fully integrated with WordPress and optimized for growth.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiArrowRight className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Shopify to WordPress Migration",
+    description:
+      "Seamlessly migrate your Shopify store to WordPress without losing data, SEO rankings, or functionality.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiArrowRight className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "Shopify to Any Other Stack Migration",
+    description:
+      "Migrate your Shopify store to modern stacks like Next.js, Laravel, or custom CMS — built for speed and control.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiArrowRight className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "WordPress to Shopify Migration",
+    description:
+      "Move your WordPress site to Shopify with precision — preserving content, design intent, and search visibility.",
+  },
+  {
+    icon: (
+      <div className="bg-blue-100 p-4 rounded-full">
+        <PiArrowRight className="w-8 h-8 text-blue-600" />
+      </div>
+    ),
+    title: "WordPress to Any Other Stack Migration",
+    description:
+      "Upgrade your WordPress site to a fully custom tech stack — with complete flexibility, better performance, and future-ready architecture.",
   },
 ];

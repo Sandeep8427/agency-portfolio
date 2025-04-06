@@ -1,8 +1,10 @@
+/* eslint-disable */
+
 import Image from "next/image";
 import React from "react";
-
 import { Lora } from "next/font/google";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+// import { cn } from "@/lib/utils";
 
 const font = Lora({
   subsets: ["latin"],
@@ -51,19 +53,26 @@ const Brands = () => {
         Leveraging cutting-edge technologies, we build robust solutions tailored to your needs. From web and mobile development to Shopify and backend systems, we use the best tools to drive innovation.
         </p>
 
-        <div className="grid grid-cols-3 items-center justify-center mx-auto md:w-4/5 cursor-pointer">
+        {/* Logos Grid */}
+        <div className="grid pt-10 grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 px-6 md:px-0">
           {logos.map((logo, i) => (
-            <div key={i} className="p-4 md:p-20 text-center">
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="flex flex-col items-center justify-center bg-[#2a2a2a] p-6 rounded-xl hover:shadow-lg hover:scale-[1.03] transition-all"
+            >
               <Image
-                priority
                 src={logo.image}
-                width={500}
-                height={500}
+                width={100}
+                height={100}
                 alt={logo.text}
-                className="w-full bg-white h-auto max-w-full rounded-lg"
+                className="object-contain w-20 h-20 mb-4"
               />
-              <p className="text-white mt-2">{logo.text}</p>
-            </div>
+              <p className="text-sm text-white md:text-base text-center">{logo.text}</p>
+            </motion.div>
           ))}
         </div>
 
@@ -74,7 +83,7 @@ const Brands = () => {
           )}
         >
           &quot;We got rid of nearly a dozen different tools because of what
-          White Owl does for us.&quot;
+          Noctua Webworks does for us.&quot;
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">

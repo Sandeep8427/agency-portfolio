@@ -13,6 +13,7 @@ import Brands from "./Tech";
 import Services from "./Services";
 import FAQS from "./FAQ";
 import { InfiniteMovingCardsDemo } from "./snippets/infinite-moving-card-snippet";
+import ProjectsSection from "./Projects";
 
 export default function Home() {
   // const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
   //   setDropdownVisible(false);
   // };
 
+  const showNavItem = true;
   const websiteDesignRef = useRef<HTMLDivElement>(null);
   const graphicDesignRef = useRef<HTMLDivElement>(null);
   const shopifyStoresRef = useRef<HTMLDivElement>(null);
@@ -62,12 +64,13 @@ export default function Home() {
         scrollToShopifyStores={scrollToShopifyStores}
         scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
+        showNavItem={showNavItem}
       />
 
       <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
-          Custom solutions designed <br /> for your business success
+        <div className="text-3xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
+        Noctua Webworks: Custom solutions built for growth.
         </div>
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
           Our passionate team is here to help you grow, innovate, and scale with
@@ -99,6 +102,7 @@ export default function Home() {
         <div id="services">
           <Services />
         </div>
+        <ProjectsSection />
         <InfiniteMovingCardsDemo />
         <FAQS />
       </div>

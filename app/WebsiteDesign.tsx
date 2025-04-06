@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ThreeDCardExample } from "./snippets/3d-card-snippet";
-import { EvervaultCardSnippet } from "./snippets/evervault-card-snippet";
+// import { EvervaultCardSnippet } from "./snippets/evervault-card-snippet";
 import {BackgroundGradientSnippet} from "./snippets/background-gradient-snippet"
  
 const WebsiteDesign = () => {
@@ -14,7 +14,7 @@ const WebsiteDesign = () => {
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
-          At the white owls we are bound to reflect your vision, values and
+          At Noctua Webworks we are bound to reflect your vision, values and
           offerings to the target clients at the same time ensures with our
           visuals elements to achieve your brand consistency.
         </p>

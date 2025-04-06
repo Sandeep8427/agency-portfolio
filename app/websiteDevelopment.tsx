@@ -4,148 +4,73 @@ import Image from "next/image";
 
 const WebsiteDesign = () => {
   return (
-    <div className="text-white">
-      <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl  md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-          Website Development <br /> for online presence
-        </div>
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Our extremely knowledgeable website developers create and maintain
-          dynamic websites.
-        </p>
-      </div>
+    <div className="relative bg-black py-20 px-6 sm:px-10 overflow-hidden">
+  {/* Decorative Blurs */}
+  <div className="absolute -top-20 -left-20 w-96 h-96 bg-purple-700 opacity-30 blur-3xl rounded-full z-0" />
+  <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-sky-500 opacity-30 blur-3xl rounded-full z-0" />
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-10">
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              width={500}
-              height={500}
-              priority
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-              alt=""
-            />
-          </div>
-        </div>
+  {/* Section Heading */}
+  <div className="relative z-10 max-w-4xl mx-auto text-center mb-16">
+    <h2 className="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-sky-300">
+      Build a Website That Builds Your Brand
+    </h2>
+    <p className="mt-6 text-lg text-neutral-300 max-w-2xl mx-auto">
+      Your website is more than a digital brochure. It's a tool for connection, credibility, and growth — let’s make it unforgettable.
+    </p>
+  </div>
+
+  {/* Benefits Grid */}
+  <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    {[
+      {
+        title: "✨ First Impressions Matter",
+        desc: "A sleek, fast-loading website captivates visitors in seconds. Don’t let an outdated look drive people away.",
+      },
+      {
+        title: "🌐 Be Discoverable",
+        desc: "With smart SEO and structure, your site can reach the right audience at the right time.",
+      },
+      {
+        title: "🔒 Build Trust Instantly",
+        desc: "Modern design, clear messaging, and smooth navigation build confidence in your brand.",
+      },
+      {
+        title: "🚀 Convert Visitors to Clients",
+        desc: "Your website is a conversion engine. We build user journeys that drive real results.",
+      },
+      {
+        title: "🛠️ Own & Control Your Platform",
+        desc: "Unlike social media, a website gives you full ownership of your content, style, and message.",
+      },
+      {
+        title: "⚡ Stay Ahead of the Curve",
+        desc: "Technology evolves fast. We use modern stacks to keep your site future-ready and blazing fast.",
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 shadow-lg hover:shadow-purple-500/20 transition duration-300"
+      >
+        <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
+        <p className="text-neutral-300 text-sm">{item.desc}</p>
       </div>
-    </div>
+    ))}
+  </div>
+
+  {/* CTA */}
+  {/* <div className="relative z-10 text-center mt-20">
+    <h3 className="text-2xl font-semibold text-white mb-2">
+      Ready to Make a Digital Impact?
+    </h3>
+    <p className="text-neutral-400 mb-6">
+      Let’s build a website that tells your story and grows your brand.
+    </p>
+    <button className="bg-gradient-to-r from-purple-600 to-sky-500 hover:from-purple-700 hover:to-sky-600 text-white px-8 py-3 rounded-full text-lg font-medium transition">
+      Start Your Journey
+    </button>
+  </div> */}
+</div>
+
   );
 };
 
