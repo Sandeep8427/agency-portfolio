@@ -14,7 +14,7 @@ const WebsiteDesign = () => {
       Build a Website That Builds Your Brand
     </h2>
     <p className="mt-6 text-lg text-neutral-300 max-w-2xl mx-auto">
-      Your website is more than a digital brochure. It's a tool for connection, credibility, and growth — let&apos;s make it unforgettable.
+      Your website is more than a digital brochure. It&apos;s a tool for connection, credibility, and growth — let&apos;s make it unforgettable.
     </p>
   </div>
 
